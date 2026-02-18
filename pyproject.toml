@@ -1,0 +1,15 @@
+[project]
+name = "awesome-recovery-engine"
+version = "0.1.0"
+description = "Python data recovery scenario engine"
+requires-python = ">=3.10"
+
+[project.scripts]
+recovery-engine = "recovery_engine.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["recovery_engine"]
