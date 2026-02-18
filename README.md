@@ -185,3 +185,27 @@ https://dnscrypt.info/
 #
 #
 # [Join us](https://Cabal.chat)
+
+---
+
+## Python Data Recovery Lab (NEW)
+
+A practical Python recovery toolkit was added under `recovery_lab/` with two main capabilities:
+
+1. **Recovery pipeline (`recover` command)**
+   - Signature-based carving from raw images (`png`, `jpg`, `pdf`, `zip`)
+   - Restore files from `.snapshots` backup trees
+   - JSON output for automation
+
+2. **Massive scenario planner (`scenarios` command)**
+   - Lazy Cartesian scenario generation (without materializing everything in memory)
+   - Useful for exploring very large parameter spaces (from millions to billions+ combinations, depending on your parameters)
+
+### Quick start
+
+```bash
+python -m recovery_lab.cli scenarios --sample 3
+python -m recovery_lab.cli recover ./sample.raw ./recovered --types png,jpg,pdf
+```
+
+> Note: no software can guarantee recovery in *all* impossible situations, but this toolkit provides a strong, extensible foundation for realistic recovery workflows.
