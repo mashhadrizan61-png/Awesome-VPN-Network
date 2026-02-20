@@ -185,3 +185,21 @@ https://dnscrypt.info/
 #
 #
 # [Join us](https://Cabal.chat)
+
+## Google 504 Error Fixer
+
+If you see `504. That’s an error. There was an error. Please try again later.` on Google services, try these steps:
+
+1. **Check if Google is down**: verify outage reports (for example, Google Workspace Status Dashboard).
+2. **Hard refresh and clear cache/cookies** for the affected Google domain.
+3. **Disable VPN/proxy/Tor temporarily** and test again (or switch to a different exit node/server).
+4. **Change DNS** to a reliable resolver (such as Cloudflare `1.1.1.1` / `1.0.0.1`).
+5. **Retry from a different network** (mobile hotspot vs Wi-Fi) to rule out ISP routing issues.
+6. **Check device time/date** and update browser + OS.
+7. **For self-hosted privacy frontends/proxies** (Whoogle/SearXNG reverse proxy):
+   - increase upstream timeout values,
+   - verify TLS certificates,
+   - confirm backend connectivity to Google endpoints,
+   - rotate blocked egress IPs.
+
+If the error persists, wait and retry later—many 504 errors are temporary upstream gateway timeouts.
