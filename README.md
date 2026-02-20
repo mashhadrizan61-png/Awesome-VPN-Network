@@ -3,6 +3,20 @@
 ---- ---
 # 2021-2030 Internet censorship and surveillance [Internet censorship by country](https://rsf.org/en/ranking/2021#) 
 
+## Google `504. That’s an error.` quick fixer
+
+If Google shows `504. That’s an error. There was an error. Please try again later.`, try these steps:
+
+1. **Retry without VPN/proxy first** to confirm whether the issue is your current exit node.
+2. **Switch DNS resolvers** (for example to Cloudflare `1.1.1.1` / `1.0.0.1`) and flush local DNS cache.
+3. **Change VPN server/region** or rotate Tor/proxy circuit, then retry.
+4. **Clear browser cookies/cache for `google.com`** or open a private/incognito window.
+5. **Disable aggressive extensions** (ad blockers/script blockers) for a quick test.
+6. **Test another network** (mobile hotspot / different ISP) to identify routing or filtering issues.
+7. If still failing, **use a privacy-respecting fallback search engine** listed below (SearXNG, Whoogle, LibreX, etc.).
+
+This error is usually temporary and often caused by overloaded routes, blocked exits, DNS issues, or upstream gateway timeouts.
+
 <blockquote><p>Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.</p></blockquote>
 
 ["No Censorship" Buttons](https://www.eff.org/pages/alternate-no-censorship-buttons)
